@@ -1,6 +1,6 @@
 # Install Ubuntu image from docker hub.
 # Selecting Ubuntu focal for backward compatiblity with libc/stdlibc 2.31
-FROM ubuntu:focal as ubuntu
+FROM ubuntu:20.04 as ubuntu
 
 # Assign simple root password.
 RUN echo "root:root" | chpasswd
